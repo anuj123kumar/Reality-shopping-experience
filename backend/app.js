@@ -2,9 +2,19 @@ require('dotenv').config()
 
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors')
+const cookieParser = require('cookie-parser')
+const bodyParser = require('body-parser')
+
+//importing routes
+const authRoutes = require('./routes/auth')
+const userRouters = require('./routes/user')
+const categoryRouters = require('./routes/category')
+const productRouters = require('./routes/product')
 
 const PORT = process.env.PORT
 const databaseURL = process.env.DB_CONNECTION
+
 
 const app = express()
 
@@ -22,7 +32,18 @@ mongoose.connect(databaseURL, {
     console.log(err)
 })
 
+// middlewares
+app.use(cors())
+app.use(cookieParser())
+app.use(bodyParser.json())
 
+//routes
+app.use("/api", authRoutes)
+app.use("/api", userRouters)
+app.use("/api", categoryRouters)
+app.use("/api", productRouters)
+
+//connecting to server
 app.listen(PORT, () => {
     console.log(`app is listening on port ${PORT}`)
-})
+}) 
