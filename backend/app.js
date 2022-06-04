@@ -11,6 +11,7 @@ const authRoutes = require('./routes/auth')
 const userRouters = require('./routes/user')
 const categoryRouters = require('./routes/category')
 const productRouters = require('./routes/product')
+const orderRouters = require('./routes/order')
 
 const PORT = process.env.PORT
 const databaseURL = process.env.DB_CONNECTION
@@ -42,6 +43,7 @@ app.use("/api", authRoutes)
 app.use("/api", userRouters)
 app.use("/api", categoryRouters)
 app.use("/api", productRouters)
+app.use("/api", orderRouters)
 
 //connecting to server
 app.listen(PORT, () => {

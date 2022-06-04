@@ -1,56 +1,41 @@
-const mongoose = require('mongoose')
-const {ObjectId} = mongoose.Schema
+const mongoose = require("mongoose");
+const { ObjectId } = mongoose.Schema;
 
-const orderSchema = Mongoose.Schema({
+const ProductCartSchema = new mongoose.Schema({
+  pruduct: {
+    type: ObjectId,
+    ref: "Product"
+  },
+  name: String,
+  count: Number,
+  price: Number
+});
 
-    products: [productCartSchema],
+// const ProductCart = mongoose.model("ProductCart", ProductCartSchema);
+
+const orderSchema = new mongoose.Schema(
+  {
+    products: [ProductCartSchema],
     transaction_id: {},
-    amount: {
-        type: Number,
-        maxlength: 32,
-        trim: true,
-    },
-    address: {
-        type: String,
-        trim: true,
-
-        maxlength: 2000,
-    },
+    amount: { type: Number },
+    address: String,
     status: {
-        type: String,
-        default: "Recieved",
-        enum: ["Cancelled", "Delivered", "Shipped", "Processing", "Recieved"]
+      type: String,
+      default: "Recieved",
+      enum: ["Cancelled", "Delivered", "Shipped", "Processing", "Recived"]
     },
     updated: Date,
     user: {
-        type: ObjectId,
-        ref: "User"
+      type: ObjectId,
+      ref: "User"
     }
+  },
+  { timestamps: true }
+);
 
-}, {timestamps: true})
-
-const productCartSchema = mongoose.Schema({
-    product: {
-        type: ObjectId,
-        ref: "Product"
-    },
-    name: {
-        type: String,
-        maxlength: 32,
-        trim: true
-    },
-    count: {
-        type: Number,
-        maxlength: 32,
-    },
-    price: {
-        type: Number,
-        maxlength: 32,
-        trim: true
-    }
-}, {timestamps: true})
+// const Order = mongoose.model("Order", orderSchema);
 
 module.exports = {
-    orderCollection: mongoose.model("Order", orderSchema),
-    productCartCollection: mongoose.model("ProductCart", productCartSchema)
-}
+  orderCollection: mongoose.model("orders", orderSchema),
+  productCartCollection: mongoose.model("productCart", ProductCartSchema)
+};
