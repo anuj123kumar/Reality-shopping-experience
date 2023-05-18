@@ -48,7 +48,7 @@ export default function Home() {
               <i className='fa fa-star' aria-hidden='true' />
               <i className='fa fa-star-half-o' aria-hidden='true' />
             </div>
-            <p>$49.99</p>
+            <p>Rs.11999</p>
           </div>
           <div className='col-4'>
             <model-viewer
@@ -70,7 +70,7 @@ export default function Home() {
               <i className='fa fa-star' aria-hidden='true' />
               <i className='fa fa-star-o' aria-hidden='true' />
             </div>
-            <p>$19.99</p>
+            <p>Rs.5999</p>
           </div>
           <div className='col-4'>
             <div className=''>
@@ -94,7 +94,7 @@ export default function Home() {
               <i className='fa fa-star-half-o' aria-hidden='true' />
               <i className='fa fa-star-o' aria-hidden='true' />
             </div>
-            <p>$29.99</p>
+            <p>Rs.899</p>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@ export default function Home() {
               <i className='fa fa-star' aria-hidden='true' />
               <i className='fa fa-star-half-o' aria-hidden='true' />
             </div>
-            <p>$49.99</p>
+            <p>Rs.14999</p>
           </div>
           <div className='col-4'>
             <model-viewer
@@ -140,7 +140,7 @@ export default function Home() {
               <i className='fa fa-star' aria-hidden='true' />
               <i className='fa fa-star-o' aria-hidden='true' />
             </div>
-            <p>$77.00</p>
+            <p>Rs.3700</p>
           </div>
           <div className='col-4'>
             <div className=''>
@@ -164,7 +164,7 @@ export default function Home() {
               <i className='fa fa-star-half-o' aria-hidden='true' />
               <i className='fa fa-star-o' aria-hidden='true' />
             </div>
-            <p>$35.99</p>
+            <p>Rs.3500</p>
           </div>
           <div className='col-4'>
             <div className=''>
@@ -188,7 +188,7 @@ export default function Home() {
               <i className='fa fa-star-half-o' aria-hidden='true' />
               <i className='fa fa-star-o' aria-hidden='true' />
             </div>
-            <p>$35.99</p>
+            <p>Rs.2400</p>
           </div>
           <div className='col-4'>
             <div className=''>
@@ -212,7 +212,7 @@ export default function Home() {
               <i className='fa fa-star-half-o' aria-hidden='true' />
               <i className='fa fa-star-o' aria-hidden='true' />
             </div>
-            <p>$35.99</p>
+            <p>Rs.350</p>
           </div>
           <div className='col-4'>
             <div className=''>
@@ -236,7 +236,7 @@ export default function Home() {
               <i className='fa fa-star-half-o' aria-hidden='true' />
               <i className='fa fa-star-o' aria-hidden='true' />
             </div>
-            <p>$35.99</p>
+            <p>Rs.5999</p>
           </div>
         </div>
       </div>
@@ -260,7 +260,7 @@ export default function Home() {
               <i className='fa fa-star' aria-hidden='true' />
               <i className='fa fa-star-half-o' aria-hidden='true' />
             </div>
-            <p>$49.99</p>
+            <p>Rs.999</p>
           </div>
           <div className='col-4'>
             <model-viewer
@@ -282,7 +282,7 @@ export default function Home() {
               <i className='fa fa-star' aria-hidden='true' />
               <i className='fa fa-star-o' aria-hidden='true' />
             </div>
-            <p>$77.00</p>
+            <p>Rs.4499</p>
           </div>
           <div className='col-4'>
             <div className=''>
@@ -306,7 +306,7 @@ export default function Home() {
               <i className='fa fa-star-half-o' aria-hidden='true' />
               <i className='fa fa-star-o' aria-hidden='true' />
             </div>
-            <p>$35.99</p>
+            <p>Rs.3005</p>
           </div>
         </div>
       </div>

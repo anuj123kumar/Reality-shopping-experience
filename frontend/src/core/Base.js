@@ -1,7 +1,6 @@
 import React from "react";
 import Menu from "./Menu";
 import './homepage.css'
-import Logo from '../images/logo-white.png'
 
 
 const Base = ({
@@ -69,7 +68,7 @@ const Base = ({
           </div>
         </div>
         <hr />
-        <h5 className='copyright'>Copyright 2022 - Major Project</h5>
+        <h5 className='copyright'>Copyright 2022 - Major Project (HMRITM)</h5>
       </div>
     </div>
   </div>

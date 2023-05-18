@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Base from "../core/Base"
-import { Link, Redirect } from "react-router-dom"
+import {  Redirect } from "react-router-dom"
 import "./styles.css"
 
 import { signin, signup, authenticate, isAuthenticated } from "../auth/helper"

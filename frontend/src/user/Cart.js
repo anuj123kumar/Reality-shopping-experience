@@ -5,7 +5,7 @@ import './styles.css'
 
 const Cart = () => {
   return (
-    <Base title='Cart Page'>
+    <Base title='small-container'>
       <div className='CartContainer'>
         <div className='Header'>
           <h3 className='Heading'>Shopping Cart</h3>
@@ -16,7 +16,7 @@ const Cart = () => {
             <img src='images/apple.png' style={{ height: "120px" }} />
           </div>
           <div className='about'>
-            <h1 className='title'>Wooden Chair</h1>
+            <h1 className='title'> stool</h1>
             <h3 className='subtitle'>250mm</h3>
             <img src='images/veg.png' style={{ height: "30px" }} />
           </div>
@@ -26,7 +26,7 @@ const Cart = () => {
             <div className='btn'>-</div>
           </div>
           <div className='prices'>
-            <div className='amount'>$29.99</div>
+            <div className='amount'>Rs.350</div>
             <div className='save'>
               <u>Save for later</u>
             </div>
@@ -40,7 +40,7 @@ const Cart = () => {
             <img src='images/grapes.png' style={{ height: "120px" }} />
           </div>
           <div className='about'>
-            <h1 className='title'>Morden Furniture</h1>
+            <h1 className='title'>Table</h1>
             <h3 className='subtitle'>1200mm</h3>
             <img src='images/veg.png' style={{ height: "30px" }} />
           </div>
@@ -50,7 +50,7 @@ const Cart = () => {
             <div className='btn'>-</div>
           </div>
           <div className='prices'>
-            <div className='amount'>$39.19</div>
+            <div className='amount'>Rs.3700</div>
             <div className='save'>
               <u>Save for later</u>
             </div>
@@ -66,7 +66,7 @@ const Cart = () => {
               <div className='Subtotal'>Sub-Total</div>
               <div className='items'>2 items</div>
             </div>
-            <div className='total-amount'>$6.18</div>
+            <div className='total-amount'>Rs.4400</div>
           </div>
           <button className='button'>Checkout</button>
         </div>

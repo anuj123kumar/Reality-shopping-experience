@@ -2,7 +2,6 @@ import React from "react"
 import { Link, withRouter } from "react-router-dom"
 import { signout, isAuthenticated } from "../auth/helper"
 import "./homepage.css"
-//import Logo from "../images/logo-white.png"
 import Logo from "../images/logos2.png"
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
